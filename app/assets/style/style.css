@@ -1,0 +1,270 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*------------------------------------*/
+
+
+body{
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
+	width: 1920px;
+	font-size: 24px;
+}
+
+.header{
+	display: flex;
+	background-image: url("../images/bg.png");
+
+}
+
+.header-content{
+	width: 310px;
+	margin-top: 308px;
+	margin-bottom: 308px;
+	margin-left: 806px;
+	color: #ffffff;
+	font-weight: bold;
+	font-style: italic;
+}
+
+.p1{
+	line-height: 1.75;
+}
+.header-content h2{
+	font-size: 80px;
+	line-height: 1.2; /*應該要是1.325*/
+	margin-bottom: 32px;
+}
+
+.p2{
+	line-height: 1.5;
+	margin-bottom: 40px;
+}
+.image{
+	display: flex;
+	justify-content: space-around;
+}
+.image img{
+	display: block;
+}
+
+.about{
+	display: flex;
+	background-color: #fff;
+}
+.about-content{
+	margin: 0 auto;
+	font-style: italic;
+	font-weight: bold;
+	text-align: center;
+}
+
+.about-content h2{
+	font-size: 64px;
+	line-height: 1.3125;
+	margin-top: 56px;
+	margin-bottom: 40px;
+}
+.about-content img {
+	margin-bottom: 20px;
+}
+
+.about-content ul {
+	max-width: 450px;
+	/* border: 1px black solid; */
+}
+.li{
+	line-height: 1.5;
+}
+
+.about-content li{
+	line-height: 1.75;
+}
+
+.ul2{
+	margin-top: 24px;
+	border-top: 1px gray solid;
+	width: 384px;
+}
+.ul2 li{
+	margin-top: 28px;
+}
+
+.ul2 li:before {
+    content: "";
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: #891818;
+    margin-right: 16px;
+}
+
+.mybrand{
+	background: #000;
+	color: #fff;
+	margin-top: 56px;
+	padding-top: 56px;
+	text-align: center;
+
+}
+.mybrand-content{
+	margin: 0 auto;
+	font-style: italic;
+	font-weight: bold;
+	text-align: center;
+	
+}
+
+.mybrand-content h2{
+	font-size: 64px;
+	line-height: 1.3125;
+	margin-bottom: 12px;
+	;
+}
+.mybrand-content h3{
+	font-size: 24px;
+	line-height: 1.75;
+	margin-bottom: 32px;
+
+}
+
+.mybrand-content p{
+	line-height: 1.5;
+	font-style: normal;
+	margin-bottom: 68px;
+}
+.mybrand-img{
+	width: 1230px;
+	margin: 0 auto;
+	display: flex;
+    flex-wrap: wrap;
+	justify-content: center;
+
+}
+
+.mybrand-img li{
+	/* display: block; */
+	margin-bottom: 40px;
+	margin-right: 24px;
+	text-align: center;
+}
+.work{
+	background-color: #fff;
+}
+.work-content{
+	margin: 0 auto;
+	text-align: center;
+	font-weight: bold;
+}
+
+.work-content h2{
+	font-size: 64px;
+	line-height: 1.3125;
+	font-style: italic;
+	font-weight: bold;
+	margin-top: 56px;
+	margin-bottom: 16px;
+}
+.work-content p{
+	font-size: 20px;
+	line-height: 1.5;
+	margin-bottom: 56px;
+}
+
+.work-content-img{
+	width: 1250px;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 auto;
+	/* border: 2px #000 solid; */
+	margin-bottom: 96px;
+}
+.work-content-img li{
+	margin-right: 24px;
+}
+.work-content-img li img{
+	display: block;
+	margin-bottom: 16px;
+}
+.work-content-img li h3{
+	margin-bottom: 48px;
+	font-size: 20px;
+	line-height: 2.1;
+}
+
+.footer{
+	background-color: #000;
+	color: #fff;
+	/* height: 300px; */
+}
+.footer-content{
+	margin: 0 auto;
+	text-align: center;
+
+}
+.footer-content h2{
+	font-size: 64px;
+	line-height: 1.3125;
+	font-style: italic;
+	font-weight: bold;
+	padding-top: 64px;
+	margin-bottom: 16px;
+}
+.footer a{
+	display: block;
+	text-decoration: none;
+	color: #fff;
+	font-size: 24px;
+	line-height: 1.5;
+	margin-bottom: 16px;
+}
+.footer-content ul{
+	padding-bottom:  48px;
+}
+

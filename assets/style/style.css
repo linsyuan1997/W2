@@ -52,14 +52,15 @@ table {
 
 body{
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
-	width: 1920px;
+	/* width: 1920px; */
 	font-size: 24px;
 }
 
 .header{
 	display: flex;
 	background-image: url("../images/bg.png");
-
+	background-size: cover;
+	background-position: center center;
 }
 
 .header-content{
@@ -94,8 +95,9 @@ body{
 }
 
 .about{
-	display: flex;
+	/* display: flex; */
 	background-color: #fff;
+
 }
 .about-content{
 	margin: 0 auto;
@@ -114,10 +116,6 @@ body{
 	margin-bottom: 20px;
 }
 
-.about-content ul {
-	max-width: 450px;
-	/* border: 1px black solid; */
-}
 .li{
 	line-height: 1.5;
 }
@@ -130,6 +128,7 @@ body{
 	margin-top: 24px;
 	border-top: 1px gray solid;
 	width: 384px;
+	margin:0 auto;
 }
 .ul2 li{
 	margin-top: 28px;
@@ -150,6 +149,7 @@ body{
 	color: #fff;
 	margin-top: 56px;
 	padding-top: 56px;
+	padding-bottom: 120px;
 	text-align: center;
 
 }
@@ -158,7 +158,7 @@ body{
 	font-style: italic;
 	font-weight: bold;
 	text-align: center;
-	
+
 }
 
 .mybrand-content h2{
@@ -218,16 +218,15 @@ body{
 }
 
 .work-content-img{
-	width: 1250px;
+	width: 1200px;
 	display: flex;
 	flex-wrap: wrap;
 	margin: 0 auto;
 	/* border: 2px #000 solid; */
 	margin-bottom: 96px;
+	justify-content: space-between; /*直接用這個成形空間*/
 }
-.work-content-img li{
-	margin-right: 24px;
-}
+
 .work-content-img li img{
 	display: block;
 	margin-bottom: 16px;
@@ -241,7 +240,6 @@ body{
 .footer{
 	background-color: #000;
 	color: #fff;
-	/* height: 300px; */
 }
 .footer-content{
 	margin: 0 auto;
